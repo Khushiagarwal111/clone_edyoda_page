@@ -1,0 +1,9 @@
+
+.header{
+    display:flex;
+     flex-wrap:wrap;
+      background-color: violet ;
+      align-items:center;
+      justify-content:space-evenly;
+      
+}

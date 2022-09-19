@@ -1,0 +1,528 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: box-border;
+    font-family: Raleway, sans-serif;
+}
+
+.top-container>div {}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    width: calc(25%-22px);
+    margin: auto;
+
+
+}
+
+.card {
+    height: 400px;
+    max-width: 320px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #0096ff;
+
+
+}
+
+.card-img {
+
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.14;
+    color:black;
+    font-size: 14px;
+  
+}
+
+.card-author {
+    font-size: .9em;
+    font-weight: 500;
+    line-height: 2;
+    color: #0096ff;
+    font-family: Raleway;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0;
+    padding-top: 4px;
+}
+
+
+
+.card-desc {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: .35px;
+    text-align: left;
+    color: #000;
+    opacity: .5;
+    white-space: pre-wrap;
+}
+
+
+.card-date {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    margin-top: .3em;
+}
+
+.card-info {
+    padding-top: 6px;
+    padding: 10px;
+   
+}
+
+.author-section {
+    height: 200px;
+    width: 200px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color: #0096ff;
+    width: 100%;
+    border-bottom: #0048ff;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+    width: 100%;
+    padding-left:5%;
+    margin-right: auto;
+    border-bottom:2px solid rgb(204, 195, 195);
+    background-color: #fff;
+}
+.left {
+    float: left;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.right {
+    position: absolute;
+    top: 0px;
+    left: 60vw;
+    float: right;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.header {
+    color: gray;
+    font-size: 15px;
+    padding: 20px 20px;
+}
+.header-dark {
+    color: #000000;
+    padding: 15px 1px;
+    font-size: large;
+    position: absolute;
+    top: 10px;
+    left: 260px;
+}
+
+.header-gray {
+    color: gray;
+    font-size: 14px;
+    margin-right: 6px;
+    margin-top:20px;
+ }
+.header-italics {
+    position: relative;
+    top: 45px;
+    left: -40px;
+    font-style: italic;
+    font-size: large;
+}
+.logo_logo{
+    height: 100%;
+    margin-top: 5px;
+    font-family: Raleway,sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: -.9px;
+    text-align: left; 
+    font-size: 1.8em;
+    margin-top: 0;
+    width: 130px;
+    position: relative;
+    top:10px;
+    left:26px;
+
+}
+.logo_light{
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(269deg,#0048ff,#0096ff),linear-gradient(#000,#000);
+    -webkit-background-clip: text;
+ 
+}
+.header-btn {
+    outline:none;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left:2%;
+    margin-right:4%;
+    height:6vh;
+    width:13vw;
+    background-image: linear-gradient(-240deg, rgb(0, 131, 255), blue);
+    color: white;
+    text-align:center;
+    border-radius: 22px;
+    padding: 4px 14px;
+}
+
+.category-container {
+    margin-left: 16%;
+    margin-right: auto;
+    margin-top: 2%;
+   
+}
+
+.category-container h1 {
+    margin-bottom: 16px;
+}
+
+.filter-by-category {
+    display: flex;
+    flex-wrap: row;
+    font-size: 15px;
+}
+
+.filter-by-category h2 {
+    font-size: 12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    margin-left: 8px;
+    font-style: normal;
+}
+
+.category {
+    display: inline-block;
+    border: 1px solid #0084ff;
+    border-radius: 14px;
+    margin: 6px 6px;
+    padding: 4px 8px;
+    color: #0084ff;
+}
+
+.category:hover {
+    background-image: linear-gradient(269deg, #0048ff, #0096ff);
+    color: white;
+}
+
+.active {
+        background-image: linear-gradient(rgb(0, 131, 255), blue);
+        color: white;
+}
+
+footer{
+        background-color: #172146; 
+        color: white;
+        text-align: center;
+        padding: 40px 40px;
+        margin-top:80px;
+}
+
+
+@media only screen and (max-width:480px) {
+    .header-dark, .header-gray{
+        display: none;
+    }
+
+    body {
+        background-color: #f2f6ff;
+    }
+
+    .card-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left:5%;
+    }
+
+    .card {
+        max-width: 380px;
+        height:300px;
+    }
+    .header-btn {
+        outline:none;
+         margin-top: 10%; 
+        margin-bottom: 2%;
+        margin-left:2%;
+         margin-right:6%; 
+        padding:auto 10px ;
+        width:30vw;
+        position:relative;
+        right:-20px;
+    }
+
+    footer{
+        /* height:300vh; */
+        width:100%;
+        background-color: #172146; 
+        color: white;
+        text-align: center;
+        padding: 40px 40px;
+        margin-top:80px
+        }
+
+}
+
+@media screen and (min-width:481px) and (max-width:720px) {
+    body {
+        background-color: #f2f6ff;
+        margin:auto;
+
+    }
+.header-gray, .header-dark{
+        display:none;
+}
+    .header-btn {
+        outline:none;
+         margin-top: 10%; 
+        margin-bottom: 2%;
+        margin-left:2%;
+         margin-right:6%; 
+        padding:auto 10px ;
+        width:30vw;
+        position:relative;
+        right:-20px;
+    }
+
+    .card-container {
+        background-color: #f2f6ff;
+        width: 110vw;
+        height:95vh;
+        margin-top: 15px;
+        margin-left:10%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+    }
+    .card-title{
+        font-size: large;
+    }
+
+    .card {
+        width: 32%;
+        height:80%;
+        background-color: #fff;
+        border-radius: 5px;
+        margin: 10px;
+        /* font-size:20px; */
+        cursor: pointer;
+        /* padding:5px 5px; */
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    .card-desc{
+        padding:10px 0px;
+        font-size:16px;
+    }
+    footer{
+        position:relative;
+        top:1100px;
+        background-color: #172146; 
+        color: white;
+        text-align: center;
+        padding: 40px 40px;
+        margin-top:80px
+    
+
+    }
+
+}
+
+
+
+@media screen and (min-width:721px) {
+    body {
+        background-color: #f2f6ff;
+       
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 16%;
+        height:500px;
+    }
+    .card {
+         cursor: pointer;
+        box-shadow: 2px 2px 2px skyblue;
+        width: 32%;
+        height:95%;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(206, 10, 10, 0.2);
+    }
+
+    .card-info {
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.5%;
+        letter-spacing: .3px;
+        text-align: left;
+          white-space: pre-wrap;
+      
+    }
+
+    .card-title {
+        font-size: large;
+        font-family: Raleway;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: black;
+        padding: 2%;
+    }
+
+    .autthor-date-section {
+        padding: 2% ;
+ 
+    }
+
+    .author-section>span {
+        padding: 2%;
+
+    }
+
+    .card-desc {
+        padding: 0px 2%;
+        font-size: 16px;
+        opacity: .5;
+    }
+    .header-btn{
+
+    }
+    footer{
+        position:relative;
+        top:1100px;
+        background-color: #172146; 
+        color: white;
+        text-align: center;
+        padding: 40px 40px;
+        margin-top:80px
+  
+    }
+}
+
+
+
+@media screen and (min-width:1081px) {
+
+    body {
+        background-color: #f2f6ff;
+      
+    }
+
+    .card-container {
+     
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 16%;
+        margin-right: 15%;
+        
+
+    }
+    footer{
+        position:relative;
+        top:500px;
+        background-color: #172146; 
+        color: white;
+        text-align: center;
+        padding: 40px 40px;
+        margin-top:80px
+    
+
+    }
+
+    .card {
+        cursor: pointer;
+        box-shadow: 0.5px 0.5px 0.5px skyblue;
+        width: 32%;
+        height:90%;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    .card-img {
+    height: 170px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+    .card-info {
+          font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.5%;
+        letter-spacing: .3px;
+        text-align: left;
+        white-space: pre-wrap;
+          }
+
+    .card-title {
+        font-size: large;
+        font-family: Raleway;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: black;
+        padding: 2% 4%;
+    }
+
+    .autthor-date-section {
+        padding:  4% ;
+ 
+    }
+
+    .author-section>span {
+        padding:  4%
+
+    }
+
+    .card-desc {
+        padding: 0px  4%;
+        font-size: 16px;
+        opacity: .5;
+    }
+}
+ 

@@ -1,0 +1,61 @@
+
+.cardContainer{
+height: 80vh;
+width:80vw;
+background-color: black;
+
+}
+
+.card{
+height:300px;
+width:300px;
+border-radius:20px;
+border: 1px solid skyblue;
+background-color: aqua;
+
+
+}
+.header-italics{
+    position:relative;
+}
+.cardImg{
+    height:150px;
+    width:300px;
+}
+.cardTitle{
+    font-size:25px;
+}
+.cardAutherName{
+color:blue;
+font-size:15px;
+}
+
+.cardDate{
+    color:black;
+
+}
+.cardDesc{
+    font-size:20px;
+}
+.cardInfo{
+    padding:5px ;
+    background-color: aquamarine;
+}
+
+@media only screen and  (min-width:420px) {
+
+
+    body{
+background-color: bisque;
+    }
+    .card-container{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .card{
+        max-width:380px;
+
+    }
+    
+}
